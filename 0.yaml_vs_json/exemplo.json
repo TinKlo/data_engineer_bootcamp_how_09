@@ -1,0 +1,16 @@
+{
+    "Name": "Thiago Ingo Kloc",
+    "Country": "BR",
+    "Sports": [
+        "watching",
+        "running",
+        "balling"
+    ],
+    "Adress": {
+        "Street": "Rua dos Alfineiros nr 4",
+        "House": "Vacant",
+        "abc": {
+            "foo": "bar"
+        }
+    }
+}

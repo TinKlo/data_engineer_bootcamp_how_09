@@ -1,0 +1,43 @@
+Resources:
+
+  BucketBeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: bucket-belisco-0921-tik
+      BucketEncryption: 
+        ServerSideEncryptionConfiguration: 
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      Tags:
+        - Key: example
+          Value: Because Edson asked for it
+        - Key: owner
+          Value: data-engineering
+        - Key: service
+          Value: airflow
+
+  Bucket2BeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: bucket-belisco-0921-tik-2
+      BucketEncryption: 
+        ServerSideEncryptionConfiguration: 
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      Tags:
+        - Key: example
+          Value: Because Edson asked for it
+        - Key: owner
+          Value: data-engineering
+        - Key: service
+          Value: airflow
