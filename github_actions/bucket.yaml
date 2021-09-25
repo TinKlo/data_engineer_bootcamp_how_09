@@ -1,0 +1,33 @@
+Resources:
+
+  BucketBeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-chicao-0921
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      Tags:
+        - Key: exampl
+          Value: Ed asked for
+        - Key: owner
+          Value: data-engineering
+        - Key: service
+          Value: airflow
+
+  Bucket2BeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: second-bucket-chicao-turma-6
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+
