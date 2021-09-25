@@ -1,4 +1,4 @@
-name: Deploy S3 bucket
+name: Deploy Redshift bucket
 
 on:
   push:
@@ -24,6 +24,6 @@ jobs:
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
         redshiftClusterMasterUsername: ${{ secrets.redshiftClusterMasterUsername }}
         redshiftClusterMasterUserPassword: ${{ secrets.redshiftClusterMasterUserPassword }}
-        ENVIRONMENT: production
+        ENVIRONMENT: productionforchico
       run: |
         python aula_02/jinja/deploy.py
