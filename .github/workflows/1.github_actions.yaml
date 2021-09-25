@@ -27,4 +27,4 @@ jobs:
         redshiftClusterMasterUserPassword: ${{ secrets.redshiftClusterMasterUserPassword }}
         ENVIRONMENT: production
       run: |
-        python aula_02/github_actions/deploy.py
+        python data_engineer_bootcamp_how_09/aula_02/github_actions/deploy.py
