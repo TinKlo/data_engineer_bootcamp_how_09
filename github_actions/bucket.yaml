@@ -1,6 +1,6 @@
 Resources:
 
-  BucketBeliscoS3:
+  BucketChicaoS3:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: bucket-chicao-0921
@@ -21,7 +21,7 @@ Resources:
         - Key: service
           Value: airflow
 
-  Bucket2BeliscoS3:
+  Bucket2ChicaoS3:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: second-bucket-chicao-turma-6
